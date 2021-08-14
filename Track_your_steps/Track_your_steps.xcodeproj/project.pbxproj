@@ -15,8 +15,18 @@
 		BA784B1626BC8841000453A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA784B1426BC8841000453A3 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		BA95377B26C83618000ECCBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA784AFE26BC883F000453A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA784B0526BC883F000453A3;
+			remoteInfo = Track_your_steps;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		BA784B0626BC883F000453A3 /* Track_your_steps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Track_your_steps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA784B0626BC883F000453A3 /* Track_your_steps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Track_your_steps.app; path = "/Users/sunitanhemafuki/Documents/Track-Your-Steps/Track_your_steps/build/Debug-iphoneos/Track_your_steps.app"; sourceTree = "<absolute>"; };
 		BA784B0926BC883F000453A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA784B0B26BC883F000453A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BA784B0D26BC883F000453A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,10 +34,18 @@
 		BA784B1226BC8841000453A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA784B1526BC8841000453A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA784B1726BC8841000453A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA95377626C83618000ECCBA /* Track_your_stepsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Track_your_stepsTests.xctest; path = "/Users/sunitanhemafuki/Documents/Track-Your-Steps/Track_your_steps/build/Debug-iphoneos/Track_your_stepsTests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BA784B0326BC883F000453A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA95377326C83618000ECCBA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,16 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				BA784B0826BC883F000453A3 /* Track_your_steps */,
-				BA784B0726BC883F000453A3 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		BA784B0726BC883F000453A3 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BA784B0626BC883F000453A3 /* Track_your_steps.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		BA784B0826BC883F000453A3 /* Track_your_steps */ = {
@@ -87,6 +96,24 @@
 			productReference = BA784B0626BC883F000453A3 /* Track_your_steps.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BA95377526C83618000ECCBA /* Track_your_stepsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA95377F26C83618000ECCBA /* Build configuration list for PBXNativeTarget "Track_your_stepsTests" */;
+			buildPhases = (
+				BA95377226C83618000ECCBA /* Sources */,
+				BA95377326C83618000ECCBA /* Frameworks */,
+				BA95377426C83618000ECCBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA95377C26C83618000ECCBA /* PBXTargetDependency */,
+			);
+			name = Track_your_stepsTests;
+			productName = Track_your_stepsTests;
+			productReference = BA95377626C83618000ECCBA /* Track_your_stepsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -100,6 +127,10 @@
 					BA784B0526BC883F000453A3 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
+					BA95377526C83618000ECCBA = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = BA784B0526BC883F000453A3;
+					};
 				};
 			};
 			buildConfigurationList = BA784B0126BC883F000453A3 /* Build configuration list for PBXProject "Track_your_steps" */;
@@ -111,11 +142,12 @@
 				Base,
 			);
 			mainGroup = BA784AFD26BC883F000453A3;
-			productRefGroup = BA784B0726BC883F000453A3 /* Products */;
+			productRefGroup = BA784AFD26BC883F000453A3;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				BA784B0526BC883F000453A3 /* Track_your_steps */,
+				BA95377526C83618000ECCBA /* Track_your_stepsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +160,13 @@
 				BA784B1626BC8841000453A3 /* LaunchScreen.storyboard in Resources */,
 				BA784B1326BC8841000453A3 /* Assets.xcassets in Resources */,
 				BA784B1126BC883F000453A3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA95377426C83618000ECCBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +183,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BA95377226C83618000ECCBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA95377C26C83618000ECCBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA784B0526BC883F000453A3 /* Track_your_steps */;
+			targetProxy = BA95377B26C83618000ECCBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BA784B0F26BC883F000453A3 /* Main.storyboard */ = {
@@ -294,7 +348,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sunitanhemafuki.Track-your-steps";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +366,47 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sunitanhemafuki.Track-your-steps";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		BA95377D26C83618000ECCBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54C93KBRC3;
+				INFOPLIST_FILE = Track_your_stepsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sunitanhemafuki.Track-your-stepsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Track_your_steps.app/Track_your_steps";
+			};
+			name = Debug;
+		};
+		BA95377E26C83618000ECCBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54C93KBRC3;
+				INFOPLIST_FILE = Track_your_stepsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sunitanhemafuki.Track-your-stepsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Track_your_steps.app/Track_your_steps";
 			};
 			name = Release;
 		};
@@ -333,6 +427,15 @@
 			buildConfigurations = (
 				BA784B1B26BC8841000453A3 /* Debug */,
 				BA784B1C26BC8841000453A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA95377F26C83618000ECCBA /* Build configuration list for PBXNativeTarget "Track_your_stepsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA95377D26C83618000ECCBA /* Debug */,
+				BA95377E26C83618000ECCBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

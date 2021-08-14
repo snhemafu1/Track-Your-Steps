@@ -15,24 +15,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track Your Steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNv-Cn-ypU">
-                                <rect key="frame" x="72" y="425.5" width="270.5" height="45.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZp-fD-k2C">
+                                <rect key="frame" x="169" y="478.5" width="76" height="40"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Quotes" backgroundImage="Icon-41">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fYe-jl-7l5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9m-dp-DIT">
+                                <rect key="frame" x="186" y="437.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.8167191611395942" green="0.72076833910412264" blue="0.61226955387327409" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="fNv-Cn-ypU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2fa-CI-yBu"/>
-                            <constraint firstItem="fNv-Cn-ypU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YmO-6x-m9C"/>
+                            <constraint firstItem="i9m-dp-DIT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3R5-nq-yuJ"/>
+                            <constraint firstItem="kZp-fD-k2C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JUL-fu-sWE"/>
+                            <constraint firstItem="i9m-dp-DIT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jud-ZR-0qn"/>
+                            <constraint firstItem="kZp-fD-k2C" firstAttribute="top" secondItem="i9m-dp-DIT" secondAttribute="bottom" constant="20" id="p5n-u4-cvv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="displayBox" destination="i9m-dp-DIT" id="xZO-Jz-8RH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="118"/>
+            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Icon-41" width="40" height="40"/>
+    </resources>
 </document>
