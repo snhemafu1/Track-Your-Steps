@@ -15,8 +15,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9m-dp-DIT">
+                                <rect key="frame" x="172.5" y="431.5" width="69.5" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZp-fD-k2C">
-                                <rect key="frame" x="169" y="478.5" width="76" height="40"/>
+                                <rect key="frame" x="169" y="485" width="76" height="40"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <state key="normal" title="Quotes" backgroundImage="Icon-41">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -25,10 +31,24 @@
                                     <action selector="buttonController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fYe-jl-7l5"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9m-dp-DIT">
-                                <rect key="frame" x="186" y="437.5" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Target steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phk-ts-32M">
+                                <rect key="frame" x="70" y="574" width="103" height="54"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4c-o7-Okk">
+                                <rect key="frame" x="233" y="574" width="100" height="54"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="10000">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Step Tracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfR-gB-hAJ">
+                                <rect key="frame" x="97" y="80" width="236" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -36,7 +56,11 @@
                         <constraints>
                             <constraint firstItem="i9m-dp-DIT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3R5-nq-yuJ"/>
                             <constraint firstItem="kZp-fD-k2C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JUL-fu-sWE"/>
+                            <constraint firstItem="N4c-o7-Okk" firstAttribute="leading" secondItem="phk-ts-32M" secondAttribute="trailing" constant="60" id="Je1-Ni-z0I"/>
                             <constraint firstItem="i9m-dp-DIT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jud-ZR-0qn"/>
+                            <constraint firstItem="phk-ts-32M" firstAttribute="top" secondItem="kZp-fD-k2C" secondAttribute="bottom" constant="60" id="KJ4-TF-UpP"/>
+                            <constraint firstItem="N4c-o7-Okk" firstAttribute="top" secondItem="kZp-fD-k2C" secondAttribute="bottom" constant="60" id="ZVZ-W7-E0i"/>
+                            <constraint firstItem="phk-ts-32M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="odJ-4O-ojf"/>
                             <constraint firstItem="kZp-fD-k2C" firstAttribute="top" secondItem="i9m-dp-DIT" secondAttribute="bottom" constant="20" id="p5n-u4-cvv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
