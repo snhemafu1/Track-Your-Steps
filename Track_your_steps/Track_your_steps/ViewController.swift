@@ -6,11 +6,10 @@
 //  Copyright © 2021 Sunita Nhemafuki. All rights reserved.
 //
 
-   import UIKit
+    import UIKit
+    import HealthKit
 
-    class ViewController: UIViewController {
-
-
+   class ViewController: UIViewController {
         
         @IBOutlet weak var displayBox: UILabel!
         let quote1 = "Keep going"
@@ -20,8 +19,7 @@
         override func viewDidLoad() {
             super.viewDidLoad()
             // Do any additional setup after loading the view.
-            
-        }
+            }
 
         @IBAction func buttonController(_ sender: Any) {
             

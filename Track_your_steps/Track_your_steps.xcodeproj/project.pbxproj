@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7DDB4E5826C8B5D6006DB5E9 /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDB4E5726C8B5D6006DB5E9 /* HealthStore.swift */; };
+		BA0E536526C8BB6E00C5A694 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA0E536426C8BB6E00C5A694 /* HealthKit.framework */; };
+		BA64810626C8CD1000EC1469 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64810526C8CD1000EC1469 /* ContentView.swift */; };
+		BA64810826C8D52100EC1469 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64810726C8D52100EC1469 /* Step.swift */; };
+		BA64810A26C974D800EC1469 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64810926C974D800EC1469 /* GraphView.swift */; };
 		BA784B0A26BC883F000453A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA784B0926BC883F000453A3 /* AppDelegate.swift */; };
 		BA784B0C26BC883F000453A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA784B0B26BC883F000453A3 /* SceneDelegate.swift */; };
 		BA784B0E26BC883F000453A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA784B0D26BC883F000453A3 /* ViewController.swift */; };
@@ -26,7 +31,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BA784B0626BC883F000453A3 /* Track_your_steps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Track_your_steps.app; path = "/Users/sunitanhemafuki/Documents/Track-Your-Steps/Track_your_steps/build/Debug-iphoneos/Track_your_steps.app"; sourceTree = "<absolute>"; };
+		7DDB4E5526C8B486006DB5E9 /* Track_your_steps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Track_your_steps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DDB4E5726C8B5D6006DB5E9 /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
+		BA0E536226C8BB6E00C5A694 /* Track_your_steps.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Track_your_steps.entitlements; sourceTree = "<group>"; };
+		BA0E536426C8BB6E00C5A694 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		BA64810426C8C6FB00EC1469 /* Track_your_stepsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Track_your_stepsTests.xctest; path = "/Users/sunitanhemafuki/Downloads/Track-Your-Steps/Track_your_steps/build/Debug-iphoneos/Track_your_stepsTests.xctest"; sourceTree = "<absolute>"; };
+		BA64810526C8CD1000EC1469 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BA64810726C8D52100EC1469 /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		BA64810926C974D800EC1469 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		BA784B0926BC883F000453A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA784B0B26BC883F000453A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BA784B0D26BC883F000453A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,7 +46,6 @@
 		BA784B1226BC8841000453A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA784B1526BC8841000453A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA784B1726BC8841000453A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA95377626C83618000ECCBA /* Track_your_stepsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Track_your_stepsTests.xctest; path = "/Users/sunitanhemafuki/Documents/Track-Your-Steps/Track_your_steps/build/Debug-iphoneos/Track_your_stepsTests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA0E536526C8BB6E00C5A694 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,23 +67,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA0E536326C8BB6E00C5A694 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA0E536426C8BB6E00C5A694 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BA784AFD26BC883F000453A3 = {
 			isa = PBXGroup;
 			children = (
 				BA784B0826BC883F000453A3 /* Track_your_steps */,
+				7DDB4E5526C8B486006DB5E9 /* Track_your_steps.app */,
+				BA0E536326C8BB6E00C5A694 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		BA784B0826BC883F000453A3 /* Track_your_steps */ = {
 			isa = PBXGroup;
 			children = (
+				BA0E536226C8BB6E00C5A694 /* Track_your_steps.entitlements */,
 				BA784B0926BC883F000453A3 /* AppDelegate.swift */,
 				BA784B0B26BC883F000453A3 /* SceneDelegate.swift */,
 				BA784B0D26BC883F000453A3 /* ViewController.swift */,
+				BA64810726C8D52100EC1469 /* Step.swift */,
+				BA64810526C8CD1000EC1469 /* ContentView.swift */,
+				BA64810926C974D800EC1469 /* GraphView.swift */,
 				BA784B0F26BC883F000453A3 /* Main.storyboard */,
 				BA784B1226BC8841000453A3 /* Assets.xcassets */,
 				BA784B1426BC8841000453A3 /* LaunchScreen.storyboard */,
 				BA784B1726BC8841000453A3 /* Info.plist */,
+				7DDB4E5726C8B5D6006DB5E9 /* HealthStore.swift */,
 			);
 			path = Track_your_steps;
 			sourceTree = "<group>";
@@ -93,7 +120,7 @@
 			);
 			name = Track_your_steps;
 			productName = Track_your_steps;
-			productReference = BA784B0626BC883F000453A3 /* Track_your_steps.app */;
+			productReference = 7DDB4E5526C8B486006DB5E9 /* Track_your_steps.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BA95377526C83618000ECCBA /* Track_your_stepsTests */ = {
@@ -111,7 +138,7 @@
 			);
 			name = Track_your_stepsTests;
 			productName = Track_your_stepsTests;
-			productReference = BA95377626C83618000ECCBA /* Track_your_stepsTests.xctest */;
+			productReference = BA64810426C8C6FB00EC1469 /* Track_your_stepsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -178,8 +205,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA784B0E26BC883F000453A3 /* ViewController.swift in Sources */,
+				BA64810626C8CD1000EC1469 /* ContentView.swift in Sources */,
+				BA64810A26C974D800EC1469 /* GraphView.swift in Sources */,
 				BA784B0A26BC883F000453A3 /* AppDelegate.swift in Sources */,
+				BA64810826C8D52100EC1469 /* Step.swift in Sources */,
 				BA784B0C26BC883F000453A3 /* SceneDelegate.swift in Sources */,
+				7DDB4E5826C8B5D6006DB5E9 /* HealthStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +369,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Track_your_steps/Track_your_steps.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54C93KBRC3;
 				INFOPLIST_FILE = Track_your_steps/Info.plist;
@@ -356,6 +388,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Track_your_steps/Track_your_steps.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54C93KBRC3;
 				INFOPLIST_FILE = Track_your_steps/Info.plist;
