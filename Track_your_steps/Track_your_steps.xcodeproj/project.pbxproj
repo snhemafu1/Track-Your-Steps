@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8371C0124A65998E4DD39656 /* Pods_Track_your_steps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06D3023D1DB95BCB4955566E /* Pods_Track_your_steps.framework */; };
+		B73666A704DDFC9670E0DEE4 /* Pods_Track_your_stepsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B898FBEA6121A21574DF0275 /* Pods_Track_your_stepsTests.framework */; };
 		BA784B0A26BC883F000453A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA784B0926BC883F000453A3 /* AppDelegate.swift */; };
 		BA784B0C26BC883F000453A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA784B0B26BC883F000453A3 /* SceneDelegate.swift */; };
 		BA784B0E26BC883F000453A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA784B0D26BC883F000453A3 /* ViewController.swift */; };
@@ -26,7 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06D3023D1DB95BCB4955566E /* Pods_Track_your_steps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Track_your_steps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38F857B92E808A4D0E35AAF6 /* Pods-Track_your_stepsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Track_your_stepsTests.release.xcconfig"; path = "Target Support Files/Pods-Track_your_stepsTests/Pods-Track_your_stepsTests.release.xcconfig"; sourceTree = "<group>"; };
+		73134BD57AC631DE4703B5C0 /* Pods-Track_your_steps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Track_your_steps.release.xcconfig"; path = "Target Support Files/Pods-Track_your_steps/Pods-Track_your_steps.release.xcconfig"; sourceTree = "<group>"; };
 		7DDB4E5526C8B486006DB5E9 /* Track_your_steps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Track_your_steps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A24BD7DC6170B44016FC55 /* Pods-Track_your_stepsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Track_your_stepsTests.debug.xcconfig"; path = "Target Support Files/Pods-Track_your_stepsTests/Pods-Track_your_stepsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B898FBEA6121A21574DF0275 /* Pods_Track_your_stepsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Track_your_stepsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA0E536226C8BB6E00C5A694 /* Track_your_steps.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Track_your_steps.entitlements; sourceTree = "<group>"; };
 		BA784B0926BC883F000453A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA784B0B26BC883F000453A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,7 +42,8 @@
 		BA784B1226BC8841000453A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA784B1526BC8841000453A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA784B1726BC8841000453A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA867CF526C9A37A0037A256 /* Track_your_stepsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Track_your_stepsTests.xctest; path = "/Users/sunitanhemafuki/Documents/Track-Your-Steps/Track_your_steps/build/Debug-iphoneos/Track_your_stepsTests.xctest"; sourceTree = "<absolute>"; };
+		BADFE5CE26CCB9E10018F6E3 /* Track_your_stepsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Track_your_stepsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB835E8B553C9AB2F28D0178 /* Pods-Track_your_steps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Track_your_steps.debug.xcconfig"; path = "Target Support Files/Pods-Track_your_steps/Pods-Track_your_steps.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8371C0124A65998E4DD39656 /* Pods_Track_your_steps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,17 +59,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B73666A704DDFC9670E0DEE4 /* Pods_Track_your_stepsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		227CDF8EE8D2E2A34B15DA22 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB835E8B553C9AB2F28D0178 /* Pods-Track_your_steps.debug.xcconfig */,
+				73134BD57AC631DE4703B5C0 /* Pods-Track_your_steps.release.xcconfig */,
+				A3A24BD7DC6170B44016FC55 /* Pods-Track_your_stepsTests.debug.xcconfig */,
+				38F857B92E808A4D0E35AAF6 /* Pods-Track_your_stepsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6FC3E17DD4B415E40BD7697A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06D3023D1DB95BCB4955566E /* Pods_Track_your_steps.framework */,
+				B898FBEA6121A21574DF0275 /* Pods_Track_your_stepsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BA784AFD26BC883F000453A3 = {
 			isa = PBXGroup;
 			children = (
 				BA784B0826BC883F000453A3 /* Track_your_steps */,
 				7DDB4E5526C8B486006DB5E9 /* Track_your_steps.app */,
+				6FC3E17DD4B415E40BD7697A /* Frameworks */,
+				227CDF8EE8D2E2A34B15DA22 /* Pods */,
+				BADFE5CE26CCB9E10018F6E3 /* Track_your_stepsTests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +119,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA784B1A26BC8841000453A3 /* Build configuration list for PBXNativeTarget "Track_your_steps" */;
 			buildPhases = (
+				AD4876AFDD7DA02A2DB18C78 /* [CP] Check Pods Manifest.lock */,
 				BA784B0226BC883F000453A3 /* Sources */,
 				BA784B0326BC883F000453A3 /* Frameworks */,
 				BA784B0426BC883F000453A3 /* Resources */,
+				E47F7AE2E8C2CB5BA011CC04 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,6 +138,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA95377F26C83618000ECCBA /* Build configuration list for PBXNativeTarget "Track_your_stepsTests" */;
 			buildPhases = (
+				A2A7E76328E1188D99B9F10B /* [CP] Check Pods Manifest.lock */,
 				BA95377226C83618000ECCBA /* Sources */,
 				BA95377326C83618000ECCBA /* Frameworks */,
 				BA95377426C83618000ECCBA /* Resources */,
@@ -114,7 +150,7 @@
 			);
 			name = Track_your_stepsTests;
 			productName = Track_your_stepsTests;
-			productReference = BA867CF526C9A37A0037A256 /* Track_your_stepsTests.xctest */;
+			productReference = BADFE5CE26CCB9E10018F6E3 /* Track_your_stepsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -124,7 +160,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "Sunita Nhemafuki";
 				TargetAttributes = {
 					BA784B0526BC883F000453A3 = {
@@ -174,6 +210,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A2A7E76328E1188D99B9F10B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Track_your_stepsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD4876AFDD7DA02A2DB18C78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Track_your_steps-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E47F7AE2E8C2CB5BA011CC04 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Track_your_steps/Pods-Track_your_steps-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Track_your_steps/Pods-Track_your_steps-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Track_your_steps/Pods-Track_your_steps-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BA784B0226BC883F000453A3 /* Sources */ = {
@@ -249,6 +349,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -309,6 +410,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -339,6 +441,7 @@
 		};
 		BA784B1B26BC8841000453A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB835E8B553C9AB2F28D0178 /* Pods-Track_your_steps.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Track_your_steps/Track_your_steps.entitlements;
@@ -358,6 +461,7 @@
 		};
 		BA784B1C26BC8841000453A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73134BD57AC631DE4703B5C0 /* Pods-Track_your_steps.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Track_your_steps/Track_your_steps.entitlements;
@@ -377,6 +481,7 @@
 		};
 		BA95377D26C83618000ECCBA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3A24BD7DC6170B44016FC55 /* Pods-Track_your_stepsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -397,6 +502,7 @@
 		};
 		BA95377E26C83618000ECCBA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38F857B92E808A4D0E35AAF6 /* Pods-Track_your_stepsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

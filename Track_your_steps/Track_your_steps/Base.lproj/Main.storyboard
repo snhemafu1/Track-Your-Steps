@@ -24,8 +24,8 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZp-fD-k2C">
-                                <rect key="frame" x="119" y="506" width="162" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZp-fD-k2C">
+                                <rect key="frame" x="169.5" y="506" width="75" height="40"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <state key="normal" title="Quotes" backgroundImage="Icon-41">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -34,53 +34,73 @@
                                     <action selector="buttonController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fYe-jl-7l5"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Target steps per day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phk-ts-32M">
-                                <rect key="frame" x="38" y="368" width="172" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Target steps per day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phk-ts-32M">
+                                <rect key="frame" x="38" y="368" width="159" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="k7Z-Ta-wWj"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" systemColor="systemPinkColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4c-o7-Okk">
-                                <rect key="frame" x="236" y="368" width="100" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4c-o7-Okk">
+                                <rect key="frame" x="223" y="368" width="51" height="54"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="10000">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Number of Steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dl8-br-awf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Steps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dl8-br-awf">
                                 <rect key="frame" x="111.5" y="246" width="191" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PpG-Nb-r1e">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PpG-Nb-r1e">
                                 <rect key="frame" x="175.5" y="297" width="63" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                 <state key="normal" title="2958"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Step Tracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfR-gB-hAJ">
-                                <rect key="frame" x="119" y="179" width="177" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step Tracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfR-gB-hAJ">
+                                <rect key="frame" x="118.5" y="179" width="177" height="36"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" systemColor="systemOrangeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gpi-Gu-cIu" userLabel="LineChartBox" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="49" y="596" width="316" height="176"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="0.90000000000000002"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.8167191611395942" green="0.72076833910412264" blue="0.61226955387327409" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="phk-ts-32M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="0d6-Oh-k3V"/>
+                            <constraint firstItem="i9m-dp-DIT" firstAttribute="top" secondItem="phk-ts-32M" secondAttribute="bottom" constant="8" id="3Sa-W9-fBi"/>
+                            <constraint firstItem="phk-ts-32M" firstAttribute="bottom" secondItem="N4c-o7-Okk" secondAttribute="bottom" id="7LT-jA-USl"/>
+                            <constraint firstItem="Dl8-br-awf" firstAttribute="centerX" secondItem="PpG-Nb-r1e" secondAttribute="centerX" id="HFl-wC-foV"/>
+                            <constraint firstItem="N4c-o7-Okk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="phk-ts-32M" secondAttribute="trailing" constant="8" symbolic="YES" id="KyN-EV-vW1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N4c-o7-Okk" secondAttribute="trailing" constant="140" id="Lhf-8u-bPP"/>
                             <constraint firstItem="i9m-dp-DIT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MTM-fp-hdb"/>
                             <constraint firstItem="kZp-fD-k2C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MVk-R6-eR0"/>
+                            <constraint firstItem="Dl8-br-awf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QSl-m2-W9o"/>
+                            <constraint firstItem="gpi-Gu-cIu" firstAttribute="top" secondItem="kZp-fD-k2C" secondAttribute="bottom" constant="50" id="Xd5-w1-O0e"/>
+                            <constraint firstItem="yfR-gB-hAJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZFu-ky-nKl"/>
+                            <constraint firstItem="gpi-Gu-cIu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="c6J-5O-tAB"/>
+                            <constraint firstItem="gpi-Gu-cIu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c8K-mh-8Na"/>
+                            <constraint firstItem="Dl8-br-awf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="246" id="eEd-9V-kqO"/>
+                            <constraint firstItem="phk-ts-32M" firstAttribute="top" secondItem="N4c-o7-Okk" secondAttribute="top" id="lD6-dy-N0y"/>
+                            <constraint firstItem="Dl8-br-awf" firstAttribute="top" secondItem="yfR-gB-hAJ" secondAttribute="bottom" constant="31" id="nWy-iy-SP1"/>
+                            <constraint firstItem="PpG-Nb-r1e" firstAttribute="top" secondItem="Dl8-br-awf" secondAttribute="bottom" constant="21" id="oEA-uA-s7a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gpi-Gu-cIu" secondAttribute="bottom" constant="90" id="qJ0-Pk-tJ2"/>
                             <constraint firstItem="i9m-dp-DIT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tzc-Z7-JTr"/>
                             <constraint firstItem="kZp-fD-k2C" firstAttribute="top" secondItem="i9m-dp-DIT" secondAttribute="bottom" constant="40" id="ubn-z1-WQv"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="LineChartBox" destination="gpi-Gu-cIu" id="59b-8r-Wht"/>
                         <outlet property="displayBox" destination="i9m-dp-DIT" id="xZO-Jz-8RH"/>
                     </connections>
                 </viewController>
@@ -91,6 +111,9 @@
     </scenes>
     <resources>
         <image name="Icon-41" width="40" height="40"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
